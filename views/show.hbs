@@ -10,12 +10,12 @@
 
 
   {{#each comments}}
-  <form action="/posts/{{../_id}}/comments/delete" method="post">
+  <!-- <form action="/posts/{{../_id}}/comments/delete" method="post">
       <input type="submit" value="DELETE"/>
 
-  </form>
+  </form> -->
 
-  {{this}}<br><br>
+  <a href="/posts/{{../_id}}/comment/{{commentId}}">{{this.comment}}</a>  <br><br>
 
   {{/each}}
 
